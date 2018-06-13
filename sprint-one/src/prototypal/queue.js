@@ -7,18 +7,18 @@ var Queue = function() {
 };
 
 var queueMethods = {
-  enqueue: function(value){
+  enqueue: function(value) {
     this.storage[this.endingIndex] = value; 
     this.endingIndex++;
   },
-  dequeue: function(){
+  dequeue: function() {
     var result = this.storage[this.startingIndex];
     delete this.storage[this.startingIndex];
     this.startingIndex++;
     return result;
   },
-  size: function(){
-    if (this.endingIndex - this.startingIndex > 0){
+  size: function() {
+    if (this.endingIndex - this.startingIndex > 0) {
       return this.endingIndex - this.startingIndex;
     }
     return 0;
