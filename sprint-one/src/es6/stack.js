@@ -1,7 +1,23 @@
 class Stack {
-  // Hey! Rewrite in the new style. Your code will wind up looking very similar,
-  // but try not not reference your old code in writing the new style.
   constructor() {
+    this.obj = {};
+    this.idx = 0;
   }
 
+  push(val) {
+    this.obj[this.idx] = val;
+    this.idx++;
+  }
+
+  pop() {
+    this.idx--;
+    var removed = this.obj[this.idx];
+    delete this.obj[this.idx];
+    return removed;
+  }
+
+  size() {
+    return this.idx > 0 ? this.idx : 0;
+  } 
 }
+
