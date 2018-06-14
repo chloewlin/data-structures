@@ -69,7 +69,7 @@ LL.addToTail(5);
 LL.addToTail(6);
 LL.removeHead();
 
-console.log('contains: ' + LL.contains(8));
-console.log('current head: ' + LL.head);
-console.log('current tail: ' + LL.tail.value);
-console.log('removeHead(): ' + LL.removeHead());
+// console.log('contains: ' + LL.contains(8));
+// console.log('current head: ' + LL.head);
+// console.log('current tail: ' + LL.tail.value);
+// console.log('removeHead(): ' + LL.removeHead());
