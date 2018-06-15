@@ -55,9 +55,3 @@ Graph.prototype.forEachNode = function(cb) {
     cb(node);
   }
 };
-
-
-/* 
- * O(1): addNode, contains, hasEdge, addEdge
- * O(n): removeNode, forEachNode
- */
