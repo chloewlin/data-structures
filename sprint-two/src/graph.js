@@ -53,14 +53,22 @@ Graph.prototype.forEachNode = function(cb) {
  * Complexity: What is the time complexity of the above functions?
  */
 
-var graph = new Graph();
-graph.addNode(4);
-graph.addNode(5);
-graph.addEdge(4, 5);
-var a = graph.hasEdge(4, 5);
-console.log(a);
-console.log(graph);
-graph.removeEdge(5);
+/* 
+ * O(1): addNode, contains, hasEdge, addEdge
+ * O(n): removeNode, forEachNode
+ */
+
+
+
+// test cases
+// var graph = new Graph();
+// graph.addNode(4);
+// graph.addNode(5);
+// graph.addEdge(4, 5);
+// var a = graph.hasEdge(4, 5);
+// console.log(a);
+// console.log(graph);
+// graph.removeEdge(5);
 // console.log(graph);
 
 
