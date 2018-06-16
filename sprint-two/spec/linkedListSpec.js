@@ -50,6 +50,4 @@ describe('linkedList', function() {
     linkedList.removeHead();
     expect(linkedList.contains(4)).to.equal(false);
   });
-
-  // add more tests here to test the functionality of linkedList
 });
